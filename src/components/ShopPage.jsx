@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import SHOP_DATA from '../data/shopData';
 import CollectionPreview from './CollectionPreview';
 

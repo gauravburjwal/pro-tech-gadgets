@@ -3,6 +3,7 @@ import './App.css';
 import HomePage from './components/HomePage';
 import { ShopPage } from './components/ShopPage';
 import Header from './components/Header';
+import SignInAndSignUp from './components/SignInAndSignUp';
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <Switch>
                 <Route exact path='/' component={HomePage} />
                 <Route exact path='/shop' component={ShopPage} />
+                <Route exact path='/signin' component={SignInAndSignUp} />
             </Switch>
         </div>
     );
