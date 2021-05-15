@@ -3,6 +3,7 @@ import FormInput from './FormInput';
 
 import '../styles/SignIn.scss';
 import CustomButton from './CustomButton';
+import { signInWithGoogle } from './../firebase/firebase.utils';
 
 export class SignIn extends Component {
     constructor(props) {
@@ -56,7 +57,12 @@ export class SignIn extends Component {
                         required
                         label='Password'
                     />
-                    <CustomButton type='submit'> Sign In </CustomButton>
+                    <div className='buttons'>
+                        <CustomButton type='submit'>Sign In</CustomButton>
+                        <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+                            Sign In with Google
+                        </CustomButton>
+                    </div>
                 </form>
             </div>
         );

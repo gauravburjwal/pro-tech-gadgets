@@ -1,9 +1,10 @@
 import SignIn from './SignIn';
 
+import '../styles/SignInAndSignUp.scss';
+
 const SignInAndSignUp = () => {
     return (
-        <div>
-            Sign In and Sign Up
+        <div className='sign-in-and-sign-up'>
             <SignIn />
         </div>
     );
