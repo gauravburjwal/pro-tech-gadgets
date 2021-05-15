@@ -1,6 +1,6 @@
 import '../styles/FormInput.scss';
 
-function FormInput({ handleChange, label, ...otherProps }) {
+const FormInput = ({ handleChange, label, ...otherProps }) => {
     return (
         <div className='group'>
             <input
@@ -20,6 +20,6 @@ function FormInput({ handleChange, label, ...otherProps }) {
             ) : null}
         </div>
     );
-}
+};
 
 export default FormInput;

@@ -1,12 +1,12 @@
 import SignIn from './SignIn';
 
-function SignInAndSignUp() {
+const SignInAndSignUp = () => {
     return (
         <div>
             Sign In and Sign Up
             <SignIn />
         </div>
     );
-}
+};
 
 export default SignInAndSignUp;

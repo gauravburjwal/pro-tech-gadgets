@@ -2,7 +2,7 @@ import '../styles/Header.scss';
 import { ReactComponent as Logo } from '../assets/pro-tech-gadgets.svg';
 import { Link } from 'react-router-dom';
 
-function Header() {
+const Header = () => {
     return (
         <div className='header'>
             <Link className='logo-container' to='/'>
@@ -20,6 +20,6 @@ function Header() {
             </div>
         </div>
     );
-}
+};
 
 export default Header;
