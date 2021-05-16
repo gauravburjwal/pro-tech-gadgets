@@ -42,7 +42,7 @@ export class SignUp extends Component {
                 confirmPassword: '',
             });
         } catch (error) {
-            console.log(error);
+            console.log(`error while sign up with email and password: `, error);
         }
     };
 

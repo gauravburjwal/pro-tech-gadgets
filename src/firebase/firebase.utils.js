@@ -30,7 +30,10 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
                 ...additionalData,
             });
         } catch (error) {
-            console.log('error while creating user', error.messgae);
+            console.log(
+                'error while creating user and saving to database: ',
+                error.messgae
+            );
         }
     }
 
