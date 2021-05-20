@@ -7,7 +7,7 @@ import Header from './components/Header';
 import SignInAndSignUp from './components/SignInAndSignUp';
 import HomePage from './components/HomePage';
 
-import { setCurrentUser } from './redux/user/userAction';
+import { setCurrentUser } from './redux/actions/userAction';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
