@@ -24,14 +24,10 @@ const CollectionItem = ({ item, addItem }) => {
     );
 };
 
-const mapStateToProps = (state) => ({
-    cartItems: state.cart.cartItems,
-});
-
 const mapDispatchToProps = (dispatch) => {
     return {
         addItem: (item) => dispatch(addItem(item)),
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(CollectionItem);
+export default connect(null, mapDispatchToProps)(CollectionItem);
